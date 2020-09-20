@@ -1,0 +1,46 @@
+Per replicar els resultats donats en el report hem de fer servir el fitxer adjunt (codi.R). S'haurà de tenir el fitxer de dades, divorce.csv, al mateix directori on es guardi i executi el fitxer de codi.
+
+El codi està separat en chunks i amb comentaris explicant que es fa a cadascun d'ells, i organitzat en els mateixos apartats que el report. Si s'executa d'adalt a baix directament de forma seqüencial, s'obtindran els mateixos resultats que en el nostre cas. No obstant, en el codi referent al random forest, en ser no-determinista, si es tornen a executar chunks els resultats poden diferir (sobre tot pel que fa al paràmetre m de la funció tuneRF).
+
+Paquets utilitzats:
+- e1071
+- randomForest
+- class
+- MASS
+- ca
+- knitr
+- kableExtra
+
+Informació de la sessió:
+R version 3.6.3 (2020-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 20.04 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.9.0
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.9.0
+
+locale:
+ [1] LC_CTYPE=en_GB.UTF-8       LC_NUMERIC=C               LC_TIME=es_ES.UTF-8        LC_COLLATE=en_GB.UTF-8
+ [5] LC_MONETARY=es_ES.UTF-8    LC_MESSAGES=en_GB.UTF-8    LC_PAPER=es_ES.UTF-8       LC_NAME=C
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C             LC_MEASUREMENT=es_ES.UTF-8 LC_IDENTIFICATION=C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+[1] ca_0.71.1           MASS_7.3-51.5       class_7.3-15        randomForest_4.6-14 e1071_1.7-3
+[6] kableExtra_1.1.0    knitr_1.28
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.4.6       RColorBrewer_1.1-2 pillar_1.4.4       compiler_3.6.3     highr_0.8
+ [6] tools_3.6.3        digest_0.6.25      evaluate_0.14      lifecycle_0.2.0    tibble_3.0.1
+[11] viridisLite_0.3.0  pkgconfig_2.0.3    rlang_0.4.6        rstudioapi_0.11    yaml_2.2.1
+[16] xfun_0.14          httr_1.4.1         stringr_1.4.0      xml2_1.3.2         vctrs_0.3.1
+[21] hms_0.5.3          webshot_0.5.2      glue_1.4.1         R6_2.4.1           rmarkdown_2.2
+[26] pbdZMQ_0.3-3       readr_1.3.1        selectr_0.4-2      magrittr_1.5       scales_1.1.1
+[31] ellipsis_0.3.1     htmltools_0.4.0    rvest_0.3.5        colorspace_1.4-1   stringi_1.4.6
+[36] munsell_0.5.0      crayon_1.3.4
+-----------
+Marc Gállego
+Fernando Gastón
